@@ -76,7 +76,6 @@ export default function ChaptersList() {
               placeholder="Tìm chương truyện..."
               className="pl-8 w-[300px] placeholder:text-primary-foreground"
               type="search"
-              name="q"
             />
           </div>
         </div>
@@ -84,7 +83,7 @@ export default function ChaptersList() {
       <div className="grid grid-cols-3 gap-3">
         {chapters.map((chapter) => (
           <div key={chapter.id}>
-            <a href="#" className="hover:text-primary/80">
+            <a href="/detail/abcd/1" className="hover:text-primary/80">
               Chương {chapter.chap_index}: {chapter.title}
             </a>
             <div className="text-sm text-gray-600">
