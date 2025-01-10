@@ -53,14 +53,14 @@ export function RelatedNovels() {
             <TabsTrigger value="same-uploader">Cùng người đăng</TabsTrigger>
           </TabsList>
         </div>
-        <div className="r">
+        <div className="">
           <TabsContent value="same-author" className="mt-6">
             <NovelCarousel novels={sameAuthorNovels} />
           </TabsContent>
           <TabsContent value="same-uploader" className="mt-6">
             <NovelCarousel novels={sameUploaderNovels} />
           </TabsContent>
-        </div>{" "}
+        </div>
       </Tabs>
     </section>
   );
