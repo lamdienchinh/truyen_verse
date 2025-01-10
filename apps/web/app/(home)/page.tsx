@@ -15,9 +15,9 @@ export default function Page() {
       <ToolBar />
       <PersonalizedSection />
       <BlogSection />
+      <RecentReviewsMarquee />
       <AboutSection />
       <CommunitySection />
-      <RecentReviewsMarquee />
     </div>
   );
 }

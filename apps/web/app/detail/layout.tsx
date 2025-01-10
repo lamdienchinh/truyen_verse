@@ -1,7 +1,7 @@
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
-import ScrollToTopBtn from "@workspace/ui/components/scroll-top-btn";
-export default function HomeLayout({
+
+export default function DetailLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -11,7 +11,6 @@ export default function HomeLayout({
       <Header />
       {children}
       <Footer />
-      <ScrollToTopBtn />
     </>
   );
 }

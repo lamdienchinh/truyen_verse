@@ -1,27 +1,8 @@
-"use client";
-
 import { getRandomImage } from "@/utils/common";
-import {
-  Carousel,
-  CarouselApi,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@workspace/ui/components/carousel";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@workspace/ui/components/tabs";
-import Autoplay from "embla-carousel-autoplay";
-import { useEffect, useState } from "react";
-import { NovelCard } from "./novel-card";
 
 const sample_img = getRandomImage(1);
 
-const novels = [
+export const novels = [
   {
     title: "Đấu La Đại Lục",
     author: "Đường Gia Tam Thiếu",
@@ -177,79 +158,3 @@ Ps: (tóm tắt vô lực, dời bước chính văn)`,
     cover: sample_img,
   },
 ];
-
-const NovelCarousel = () => {
-  const [api, setApi] = useState<CarouselApi>();
-  const [, setCurrent] = useState(0);
-  const [, setCount] = useState(0);
-
-  useEffect(() => {
-    if (!api) {
-      return;
-    }
-
-    setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
-
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
-  }, [api]);
-
-  return (
-    <div className="relative" suppressHydrationWarning>
-      <Carousel
-        setApi={setApi}
-        opts={{
-          align: "start",
-          loop: true,
-        }}
-        className="w-full"
-        plugins={[
-          Autoplay({
-            delay: 3000,
-          }),
-        ]}
-        suppressHydrationWarning
-      >
-        <CarouselContent>
-          {novels.map((novel, index) => (
-            <CarouselItem
-              key={index}
-              className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5"
-            >
-              <NovelCard {...novel} />
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
-    </div>
-  );
-};
-
-export default function FeaturedNovels() {
-  return (
-    <section className="py-12" suppressHydrationWarning>
-      <div className="container">
-        <Tabs defaultValue="recommended" className="w-full">
-          <TabsList>
-            <TabsTrigger value="recommended">Đề xuất</TabsTrigger>
-            <TabsTrigger value="updated">Mới cập nhật</TabsTrigger>
-            <TabsTrigger value="top">Top truyện</TabsTrigger>
-          </TabsList>
-          <TabsContent value="recommended" className="mt-6">
-            <NovelCarousel />
-          </TabsContent>
-          <TabsContent value="updated" className="mt-6">
-            <NovelCarousel />
-          </TabsContent>
-          <TabsContent value="top" className="mt-6">
-            <NovelCarousel />
-          </TabsContent>
-        </Tabs>
-      </div>
-    </section>
-  );
-}

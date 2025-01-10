@@ -39,10 +39,7 @@ export default function Header() {
             />
           </div>
           <nav className="flex items-center space-x-2">
-            <Button variant="ghost" size="sm">
-              Đăng nhập
-            </Button>
-            <Button size="sm">Đăng ký</Button>
+            <Button size="sm">Đăng nhập</Button>
           </nav>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>

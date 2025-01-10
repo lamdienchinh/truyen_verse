@@ -3,6 +3,7 @@ import { Button } from "@workspace/ui/components/button";
 import { Card, CardContent } from "@workspace/ui/components/card";
 import { ScrollArea, ScrollBar } from "@workspace/ui/components/scroll-area";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface NovelItemProps {
   title: string;
@@ -13,7 +14,10 @@ interface NovelItemProps {
 const NovelItem = ({ title, chapter, cover }: NovelItemProps) => (
   <Card className="overflow-hidden">
     <CardContent className="p-0 relative">
-      <div className="relative overflow-hidden h-[300px] group cursor-pointer">
+      <Link
+        href={`/detail/temp`}
+        className="relative overflow-hidden h-[300px] group cursor-pointer"
+      >
         <Image
           src={cover || "/placeholder.svg"}
           alt={title}
@@ -22,7 +26,7 @@ const NovelItem = ({ title, chapter, cover }: NovelItemProps) => (
           className="object-cover w-full h-[300px] transition-transform duration-200 ease-in-out group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-      </div>
+      </Link>
       <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
         <h4 className="font-semibold line-clamp-2">{title}</h4>
         <p className="mt-1 text-sm text-gray-300">Chương {chapter}</p>
