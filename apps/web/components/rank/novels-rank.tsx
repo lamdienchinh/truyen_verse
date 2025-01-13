@@ -88,12 +88,12 @@ const NovelsRanking = () => {
   ];
 
   return (
-    <div className="w-full space-y-4">
+    <div className="mt-4 w-full space-y-4">
       <div className="flex justify-between gap-4 mb-8 w-full items-center bg-primary text-white p-2 rounded-md">
         <div className="text-nowrap font-semibold">Bộ lọc</div>
         <div className="w-fit flex items-center gap-2">
           <Select value={rankingType} onValueChange={setRankingType}>
-            <SelectTrigger className="p-2 border rounded-lg ">
+            <SelectTrigger className="p-2 border rounded-lg border-primary-foreground">
               <SelectValue placeholder="Tất cả" />
             </SelectTrigger>
             <SelectContent>
@@ -106,7 +106,7 @@ const NovelsRanking = () => {
           </Select>
 
           <Select value={timeFilter} onValueChange={setTimeFilter}>
-            <SelectTrigger className="p-2 border rounded-lg ">
+            <SelectTrigger className="p-2 border rounded-lg border-primary-foreground">
               <SelectValue placeholder="Mọi thời điểm" />
             </SelectTrigger>
             <SelectContent>
@@ -143,6 +143,10 @@ const NovelsRanking = () => {
                   <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
                   <span>{topManga[1]!.rating}</span>
                 </div>
+                <div className="flex justify-center items-center gap-1">
+                  <BookOpen className="w-4 h-4 text-blue-500 fill-blue-500" />
+                  <span>{topManga[1]!.views.toLocaleString()}</span>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -173,6 +177,10 @@ const NovelsRanking = () => {
                   <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
                   <span>{topManga[0]!.rating}</span>
                 </div>
+                <div className="flex justify-center items-center gap-1">
+                  <BookOpen className="w-4 h-4 text-blue-500 fill-blue-500" />
+                  <span>{topManga[0]!.views.toLocaleString()}</span>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -202,6 +210,10 @@ const NovelsRanking = () => {
                 <div className="mt-2 flex justify-center gap-2 items-center">
                   <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
                   <span>{topManga[2]!.rating}</span>
+                </div>
+                <div className="flex justify-center items-center gap-1">
+                  <BookOpen className="w-4 h-4 text-blue-500 fill-blue-500" />
+                  <span>{topManga[2]!.views.toLocaleString()}</span>
                 </div>
               </div>
             </CardContent>

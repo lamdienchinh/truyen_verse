@@ -24,11 +24,16 @@ export default function Rank() {
           <div className="w-full">
             <TabsContent
               value="novels"
-              className="mt-4 w-full flex justify-center"
+              className="w-full flex justify-center"
+              asChild
             >
               <NovelsRanking />
             </TabsContent>
-            <TabsContent value="users" className="mt-4 w-full flex justify-center">
+            <TabsContent
+              value="users"
+              className="w-full flex justify-center"
+              asChild
+            >
               <UsersRanking />
             </TabsContent>
           </div>

@@ -24,9 +24,8 @@ export default function Header() {
         </Link>
         <nav className="flex items-center space-x-6 text-sm font-medium">
           <Link href="/">Trang chủ</Link>
-          <Link href="/categories">Thể loại</Link>
+          <Link href="/category">Thể loại</Link>
           <Link href="/rank">BXH</Link>
-          <Link href="/authors">Tác giả</Link>
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <div className="relative w-fit">

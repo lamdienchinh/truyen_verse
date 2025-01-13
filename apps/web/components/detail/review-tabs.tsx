@@ -26,7 +26,7 @@ export default function ReviewTabs() {
       <div className="flex items-center justify-between gap-4 py-4 px-4 bg-primary text-primary-foreground rounded-md">
         <div className="font-semibold">Đánh giá</div>
         <Select>
-          <SelectTrigger className="w-[180px]">
+          <SelectTrigger className="w-[180px] border-primary-foreground">
             <SelectValue placeholder="Sắp xếp theo" />
           </SelectTrigger>
           <SelectContent>

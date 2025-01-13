@@ -1,10 +1,15 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@workspace/ui/components/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@workspace/ui/components/card";
 
 export default function AboutSection() {
   return (
-    <section className="py-12">
+    <section className="pb-12">
       <div className="container">
-        <h2 className="text-2xl font-bold mb-6 text-center">
+        <h2 className="text-2xl font-bold mb-6 text-start">
           Tại sao chọn Truyện Verse?
         </h2>
         <div className="grid gap-6 md:grid-cols-3">

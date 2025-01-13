@@ -89,12 +89,12 @@ const UsersRanking = () => {
   ];
 
   return (
-    <div className="w-full space-y-4">
-      <div className="flex justify-between gap-4 mb-8 w-full items-center bg-primary text-white p-2 rounded-md">
+    <div className="mt-4 w-full space-y-4">
+      <div className="!mt-0 flex justify-between gap-4 mb-8 w-full items-center bg-primary text-white p-2 rounded-md">
         <div className="text-nowrap font-semibold">Bộ lọc</div>
         <div className="w-fit flex items-center gap-2">
           <Select value={rankingType} onValueChange={setRankingType}>
-            <SelectTrigger className="p-2 border rounded-lg ">
+            <SelectTrigger className="p-2 border rounded-lg border-primary-foreground">
               <SelectValue placeholder="Tất cả" />
             </SelectTrigger>
             <SelectContent>
@@ -111,7 +111,7 @@ const UsersRanking = () => {
           </Select>
 
           <Select value={timeFilter} onValueChange={setTimeFilter}>
-            <SelectTrigger className="p-2 border rounded-lg ">
+            <SelectTrigger className="p-2 border rounded-lg border-primary-foreground">
               <SelectValue placeholder="Mọi thời điểm" />
             </SelectTrigger>
             <SelectContent>
@@ -141,7 +141,15 @@ const UsersRanking = () => {
               </div>
               <div className="mt-4 text-center">
                 <h3 className="font-bold truncate">{topReaders[1]!.name}</h3>
-                <div className="mt-2 flex justify-center items-center gap-2">
+                <div className="flex justify-center items-center gap-2">
+                  <Gift className="w-4 h-4 text-pink-500 fill-pink-500" />
+                  <span>{topReaders[1]!.flowersGiven}</span>
+                </div>
+                <div className="flex justify-center items-center gap-2">
+                  <Heart className="w-4 h-4 text-red-500 fill-red-500" />
+                  <span>{topReaders[1]!.favorites}</span>
+                </div>
+                <div className="flex justify-center items-center gap-2">
                   <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
                   <span>{topReaders[1]!.rating}</span>
                 </div>
@@ -168,7 +176,15 @@ const UsersRanking = () => {
               </div>
               <div className="mt-4 text-center">
                 <h3 className="font-bold truncate">{topReaders[0]!.name}</h3>
-                <div className="mt-2 flex justify-center gap-2 items-center">
+                <div className="flex justify-center items-center gap-2">
+                  <Gift className="w-4 h-4 text-pink-500 fill-pink-500" />
+                  <span>{topReaders[0]!.flowersGiven}</span>
+                </div>
+                <div className="flex justify-center items-center gap-2">
+                  <Heart className="w-4 h-4 text-red-500 fill-red-500" />
+                  <span>{topReaders[0]!.favorites}</span>
+                </div>
+                <div className="flex justify-center gap-2 items-center">
                   <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
                   <span>{topReaders[0]!.rating}</span>
                 </div>
@@ -195,7 +211,15 @@ const UsersRanking = () => {
               </div>
               <div className="mt-4 text-center">
                 <h3 className="font-bold truncate">{topReaders[2]!.name}</h3>
-                <div className="mt-2 flex justify-center gap-2 items-center">
+                <div className="flex justify-center items-center gap-2">
+                  <Gift className="w-4 h-4 text-pink-500 fill-pink-500" />
+                  <span>{topReaders[2]!.flowersGiven}</span>
+                </div>
+                <div className="flex justify-center items-center gap-2">
+                  <Heart className="w-4 h-4 text-red-500 fill-red-500" />
+                  <span>{topReaders[2]!.favorites}</span>
+                </div>
+                <div className="flex justify-center gap-2 items-center">
                   <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
                   <span>{topReaders[2]!.rating}</span>
                 </div>

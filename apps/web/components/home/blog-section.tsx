@@ -57,13 +57,18 @@ export default function BlogSection() {
       excerpt: "Khám phá những tác phẩm tiên hiệp đỉnh cao trong năm qua...",
       image: img_sample,
     },
+    {
+      title: "Top 5 truyện tiên hiệp hay nhất 2024",
+      excerpt: "Khám phá những tác phẩm tiên hiệp đỉnh cao trong năm qua...",
+      image: img_sample,
+    },
   ];
 
   return (
-    <section className="py-12 bg-muted">
+    <section className="py-12">
       <div className="container">
         <h2 className="text-2xl font-bold mb-6">Tin mới</h2>
-        <div className="grid gap-6 md:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {posts.map((post, index) => (
             <BlogPost key={index} {...post} />
           ))}

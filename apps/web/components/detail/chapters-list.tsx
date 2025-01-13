@@ -74,7 +74,7 @@ export default function ChaptersList() {
             <Search className="absolute left-2 top-2.5 h-4 w-4 text-primary-foreground" />
             <Input
               placeholder="Tìm chương truyện..."
-              className="pl-8 w-[300px] placeholder:text-primary-foreground"
+              className="pl-8 w-[300px] placeholder:text-primary-foreground border-primary-foreground"
               type="search"
             />
           </div>

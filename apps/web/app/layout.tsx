@@ -1,13 +1,19 @@
-"use client";
 import { Public_Sans } from "next/font/google";
 
-import "@workspace/ui/globals.css";
 import { Providers } from "@/components/providers";
+import "@workspace/ui/globals.css";
+import { Metadata } from "next";
 
 const fontSans = Public_Sans({
   subsets: ["vietnamese"],
   variable: "--font-sans",
 });
+
+export const metadata: Metadata = {
+  title: "Truyện Verse",
+  description:
+    "Cộng động truyện chữ với vô vàn truyện cùng với cộng đồng đọc giả lớn, hoạt động sôi nổi",
+};
 
 export default function RootLayout({
   children,
@@ -16,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${fontSans.variable} font-sans antialiased scrollbar-custom`}>
+      <body
+        className={`${fontSans.variable} font-sans antialiased scrollbar-custom`}
+      >
         <Providers>{children}</Providers>
       </body>
     </html>

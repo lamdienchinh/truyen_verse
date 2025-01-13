@@ -171,7 +171,7 @@ export default function RecentReviewsMarquee() {
   ];
 
   return (
-    <section className="container py-8">
+    <section className="container pb-8">
       <h2 className="text-2xl font-bold mb-6">Đánh giá gần đây</h2>
       <Marquee pauseOnHover className="[--duration:80s]">
         {recentReviews.map((review, index) => (

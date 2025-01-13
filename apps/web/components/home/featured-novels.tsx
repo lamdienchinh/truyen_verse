@@ -231,7 +231,7 @@ const NovelCarousel = () => {
 
 export default function FeaturedNovels() {
   return (
-    <section className="py-12" suppressHydrationWarning>
+    <section className="pt-12" suppressHydrationWarning>
       <div className="container">
         <Tabs defaultValue="recommended" className="w-full">
           <TabsList>

@@ -34,27 +34,20 @@ const fonts = [
   { name: "Monospace", value: "monospace" },
 ];
 
-const colors = [
-  { name: "White", background: "bg-white", text: "text-black" },
-  { name: "Sepia", background: "bg-[#f4ecd8]", text: "text-black" },
-  { name: "Dark", background: "bg-gray-900", text: "text-white" },
-  { name: "Black", background: "bg-black", text: "text-white" },
-];
-
 const chapters = [
-  { id: 1, title: "Chapter 1: The Journey Begins" },
-  { id: 2, title: "Chapter 2: The Plot Thickens" },
-  { id: 3, title: "Chapter 3: The Climax" },
-  { id: 4, title: "Chapter 4: The Resolution" },
+  { id: 1, title: "Chương 1" },
+  { id: 2, title: "Chương 2" },
+  { id: 3, title: "Chương 3" },
+  { id: 4, title: "Chương 4" },
 ];
 
 export default function Chapter() {
   const [showSettings, setShowSettings] = useState(false);
   const [showChapterList, setShowChapterList] = useState(false);
   const [fontSize, setFontSize] = useState<number>(16);
-  const [lineHeight, setLineHeight] = useState<number>(1.5);
+  const [lineHeight, setLineHeight] = useState<number>(1.3);
   const [font, setFont] = useState("sans-serif");
-  const [theme] = useState("bg-white text-black");
+  const [theme] = useState("bg-background text-background-foreground");
   const [currentChapter, setCurrentChapter] = useState(1);
 
   return (
@@ -67,7 +60,7 @@ export default function Chapter() {
             <div className="flex items-center gap-2">
               <Link
                 href="/detail/abcd"
-                className="block px-2 py-1 h-fit border rounded-md border-secondary"
+                className="block px-2 py-1 h-fit border rounded-sm border-secondary"
               >
                 <ChevronsLeft width={14} height={14} />
               </Link>
