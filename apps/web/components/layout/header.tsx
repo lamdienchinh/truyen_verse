@@ -32,6 +32,7 @@ function HeaderContent() {
           <Link href="/">Trang chủ</Link>
           <Link href="/category">Thể loại</Link>
           <Link href="/rank">BXH</Link>
+          <Link href="/article">Bài viết</Link>
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <div className="relative w-fit">

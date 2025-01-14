@@ -1,6 +1,6 @@
 import hero_banner from "@/assets/imgs/hero-banner-img.webp";
 import { Button } from "@workspace/ui/components/button";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -22,10 +22,9 @@ export default function HeroSection() {
             Hàng ngàn truyện đặc sắc đang chờ bạn
           </p>
           <div className="space-x-4">
-            <Button size="lg">Đọc ngay</Button>
-            <Button variant="outline" size="lg">
-              Khám phá thêm
-            </Button>
+            <Link href="/category">
+              <Button size="lg">Khám phá ngay</Button>
+            </Link>
           </div>
         </div>
       </div>

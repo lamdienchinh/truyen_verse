@@ -9,6 +9,7 @@ import {
   TooltipTrigger,
 } from "@workspace/ui/components/tooltip";
 import { ArrowDown01, ArrowDown10, Search } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 export default function ChaptersList() {
   const [isOldToNew, setIsOldToNew] = useState(false);
@@ -83,9 +84,9 @@ export default function ChaptersList() {
       <div className="grid grid-cols-3 gap-3">
         {chapters.map((chapter) => (
           <div key={chapter.id}>
-            <a href="/detail/abcd/1" className="hover:text-primary/80">
+            <Link href="/detail/abcd/1" className="hover:text-primary/80">
               Chương {chapter.chap_index}: {chapter.title}
-            </a>
+            </Link>
             <div className="text-sm text-gray-600">
               {formatRelativeTime(chapter.createdAt)}
             </div>

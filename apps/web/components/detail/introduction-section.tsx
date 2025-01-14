@@ -15,6 +15,7 @@ import {
   X,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function IntroductionSection() {
@@ -39,9 +40,11 @@ export default function IntroductionSection() {
             <div className="text-gray-600">Đăng bởi: Chin Chin</div>
           </div>
           <div className="flex items-center gap-3 w-full">
-            <Button className="flex items-center gap-1">
-              <BookOpen width={10} height={10} /> Đọc truyện
-            </Button>
+            <Link href="detail/abcd">
+              <Button className="flex items-center gap-1">
+                <BookOpen width={10} height={10} /> Đọc truyện
+              </Button>
+            </Link>
             <Button className="flex items-center gap-1" variant="outline">
               <Bookmark width={10} height={10} /> Đánh dấu truyện
             </Button>

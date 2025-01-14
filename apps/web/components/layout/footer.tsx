@@ -18,15 +18,14 @@ export default function Footer() {
                 <Link href="/">Trang chủ</Link>
               </li>
               <li>
-                <Link href="/categories">Thể loại</Link>
+                <Link href="/category">Thể loại</Link>
               </li>
               <li>
-                <Link href="/rankings">BXH</Link>
+                <Link href="/rank">BXH</Link>
               </li>
               <li>
-                <Link href="/authors">Tác giả</Link>
+                <Link href="/post">Bài viết</Link>
               </li>
-              nv{" "}
             </ul>
           </div>
           <div>
