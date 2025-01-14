@@ -1,4 +1,5 @@
 import { IArticle } from "@/type/article";
+import { IDiscussion } from "@/type/forum";
 import { getRandomImage } from "@/utils/common";
 
 const sample_img = getRandomImage(1);
@@ -225,3 +226,54 @@ export const mockArticles: IArticle[] = [
   },
 ];
 
+
+export const threads = [
+    {
+      id: '1',
+      title: "[Tiên Hiệp] Thương Thiên Chí Tôn - Chapter 1: Khởi đầu",
+      author: "TruyenHayVN",
+      avatar: "/api/placeholder/32/32",
+      postDate: "2024-01-14 10:30",
+      lastReply: {
+        author: "DocGiaKiet",
+        date: "2024-01-14 15:45",
+      },
+      views: 1250,
+      replies: 45,
+      likes: 67,
+      isPinned: true,
+      isHot: true,
+    },
+    {
+      id: '2',
+      title: "[Đô Thị] Tối Cường Phản Chi Ký - Chapter 15: Gặp gỡ",
+      author: "TruyenCuVN",
+      avatar: "/api/placeholder/32/32",
+      postDate: "2024-01-14 09:15",
+      lastReply: {
+        author: "HoangTuBeDe",
+        date: "2024-01-14 14:30",
+      },
+      views: 890,
+      replies: 32,
+      likes: 41,
+      isPinned: false,
+      isHot: true,
+    },
+    {
+      id: '3',
+      title: "[Huyền Huyễn] Vô Thượng Thần Đế - Chapter 8: Tu luyện",
+      author: "TruyenHot24h",
+      avatar: "/api/placeholder/32/32",
+      postDate: "2024-01-14 08:00",
+      lastReply: {
+        author: "NguyetHoa",
+        date: "2024-01-14 13:20",
+      },
+      views: 756,
+      replies: 28,
+      likes: 35,
+      isPinned: false,
+      isHot: false,
+    },
+  ];

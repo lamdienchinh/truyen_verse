@@ -26,6 +26,9 @@ export default function Footer() {
               <li>
                 <Link href="/post">Bài viết</Link>
               </li>
+              <li>
+                <Link href="/forum">Diễn đàn</Link>
+              </li>
             </ul>
           </div>
           <div>
