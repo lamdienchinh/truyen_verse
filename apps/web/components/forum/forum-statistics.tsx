@@ -34,7 +34,7 @@ const ForumStatistic = () => {
                 <TooltipContent>Tổng số bài viết trong diễn đàn</TooltipContent>
                 <TooltipTrigger>
                   <InfoIcon
-                    className="fill-primary text-primary-foreground"
+                    className="fill-blue-500 text-white"
                     width={20}
                     height={20}
                   />
@@ -61,7 +61,7 @@ const ForumStatistic = () => {
                 <TooltipContent>Số bình luận mới</TooltipContent>
                 <TooltipTrigger>
                   <InfoIcon
-                    className="fill-primary text-primary-foreground"
+                    className="fill-blue-500 text-white"
                     width={20}
                     height={20}
                   />
@@ -89,7 +89,7 @@ const ForumStatistic = () => {
                 <TooltipContent>Số chủ đề mới</TooltipContent>
                 <TooltipTrigger>
                   <InfoIcon
-                    className="fill-primary text-primary-foreground"
+                    className="fill-blue-500 text-white"
                     width={20}
                     height={20}
                   />

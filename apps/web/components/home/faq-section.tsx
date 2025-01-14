@@ -45,11 +45,11 @@ const defaultFAQs: FAQItem[] = [
 ];
 
 const FAQ = ({
-  title = "Câu hỏi thường gặp về trang truyện",
+  title = "Câu hỏi thường gặp",
   faqs = defaultFAQs,
 }: FAQProps) => {
   return (
-    <section className="container py-8">
+    <section id="faq" className="container py-8">
       <Card className="w-full max-w-3xl mx-auto">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">

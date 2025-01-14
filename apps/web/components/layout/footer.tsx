@@ -35,10 +35,10 @@ export default function Footer() {
             <h3 className="font-semibold mb-2">Hỗ trợ</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/faq">FAQ</Link>
+                <Link href="/#faq">FAQ</Link>
               </li>
               <li>
-                <Link href="/contact">Liên hệ</Link>
+                <Link href="/#contact">Liên hệ</Link>
               </li>
               <li>
                 <Link href="/terms">Điều khoản dịch vụ</Link>
