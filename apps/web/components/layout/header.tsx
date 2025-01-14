@@ -1,5 +1,6 @@
 "use client";
 
+import { AuthProvider, useAuth } from "@/contexts/auth-context";
 import { Button } from "@workspace/ui/components/button";
 import {
   DropdownMenu,
@@ -12,15 +13,20 @@ import { SparklesText } from "@workspace/ui/components/sparkles-text";
 import { Moon, Search, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import AuthModal from "../auth/auth-modal";
 
-export default function Header() {
+function HeaderContent() {
   const { setTheme } = useTheme();
-
+  const { openModal } = useAuth();
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <SparklesText sparklesCount={4}  className="text-lg" text={"Truyện Verse"} />
+          <SparklesText
+            sparklesCount={4}
+            className="text-lg"
+            text={"Truyện Verse"}
+          />
         </Link>
         <nav className="flex items-center space-x-6 text-sm font-medium">
           <Link href="/">Trang chủ</Link>
@@ -38,7 +44,9 @@ export default function Header() {
             />
           </div>
           <nav className="flex items-center space-x-2">
-            <Button size="sm">Đăng nhập</Button>
+            <Button onClick={() => openModal("login")} size="sm">
+              Đăng nhập
+            </Button>
           </nav>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -62,6 +70,15 @@ export default function Header() {
           </DropdownMenu>
         </div>
       </div>
+      <AuthModal />
     </header>
+  );
+}
+
+export default function Header() {
+  return (
+    <AuthProvider>
+      <HeaderContent />
+    </AuthProvider>
   );
 }
