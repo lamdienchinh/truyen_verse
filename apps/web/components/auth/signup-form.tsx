@@ -1,12 +1,17 @@
 "use client";
 
+import { AuthenApi } from "@/api/auth-api";
+import { showToast } from "@/app/providers";
+import { useAuth } from "@/contexts/auth-context";
 import { Button } from "@workspace/ui/components/button";
 import { Input } from "@workspace/ui/components/input";
 import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 
 interface SignupFormValues {
+  name: string;
   email: string;
   password: string;
   confirmPassword: string;
@@ -14,6 +19,7 @@ interface SignupFormValues {
 
 export function SignupForm() {
   const [showPassword, setShowPassword] = useState(false);
+  const { openModal } = useAuth();
   const {
     register,
     handleSubmit,
@@ -22,7 +28,18 @@ export function SignupForm() {
   } = useForm<SignupFormValues>();
 
   const onSubmit = async (data: SignupFormValues) => {
-    console.log("signup: ", data);
+    try {
+      const body = {
+        name: data.name,
+        email: data.email,
+        password: data.password,
+      };
+      await AuthenApi.register(body);
+      showToast("success", "Đăng ký thành công!");
+      openModal("login");
+    } catch (error) {
+      showToast("error", `Đăng ký thất bại: ${error}`);
+    }
   };
 
   return (
@@ -36,6 +53,17 @@ export function SignupForm() {
         />
         {errors.email && (
           <p className="text-red-500 text-sm">{errors.email.message}</p>
+        )}
+      </div>
+
+      <div className="space-y-2">
+        <label className="text-sm font-medium">Họ và tên</label>
+        <Input
+          placeholder="Nguyễn Văn A"
+          {...register("name", { required: "Tên là bắt buộc" })}
+        />
+        {errors.name && (
+          <p className="text-red-500 text-sm">{errors.name.message}</p>
         )}
       </div>
 
@@ -84,10 +112,7 @@ export function SignupForm() {
         )}
       </div>
 
-      <Button
-        type="submit"
-        className="w-full"
-      >
+      <Button type="submit" className="w-full">
         Đăng ký
       </Button>
     </form>

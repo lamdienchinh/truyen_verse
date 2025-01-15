@@ -1,6 +1,8 @@
 "use client";
 
+import { AuthenApi } from "@/api/auth-api";
 import { AuthProvider, useAuth } from "@/contexts/auth-context";
+import { useGetUserProfile } from "@/hooks/use-get-profile";
 import { Button } from "@workspace/ui/components/button";
 import {
   DropdownMenu,
@@ -14,10 +16,20 @@ import { Moon, Search, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import AuthModal from "../auth/auth-modal";
+import { Avatar, AvatarFallback, AvatarImage } from "@workspace/ui/components/avatar";
 
 function HeaderContent() {
   const { setTheme } = useTheme();
+  const { data: userProfile, refetch } = useGetUserProfile();
   const { openModal } = useAuth();
+  const handleLogout = async () => {
+    await AuthenApi.logout();
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("token");
+    }
+    refetch();
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
@@ -46,9 +58,28 @@ function HeaderContent() {
             />
           </div>
           <nav className="flex items-center space-x-2">
-            <Button onClick={() => openModal("login")} size="sm">
-              Đăng nhập
-            </Button>
+            {userProfile ? (
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Avatar className='cursor-pointer h-8 w-8'>
+                    <AvatarImage src={userProfile.avatar}/>
+                    <AvatarFallback className='bg-primary text-primary-foreground'>{userProfile.name[0]}</AvatarFallback>
+                  </Avatar>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  <DropdownMenuItem>
+                    <Link href="/profile">Hồ sơ</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={handleLogout}>
+                    Đăng xuất
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
+              <Button onClick={() => openModal("login")} size="sm">
+                Đăng nhập
+              </Button>
+            )}
           </nav>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>

@@ -26,7 +26,6 @@ export default function LoginPage() {
     <div className="min-h-screen bg-primary/20 flex items-center justify-center p-4">
       <Card className="w-full max-w-4xl bg-white rounded-3xl overflow-hidden">
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Left side - Illustration */}
           <div className="relative bg-primary/60 p-6 flex items-center justify-center">
             <div className="relative w-full h-full z-[1]">
               <Image
@@ -45,10 +44,7 @@ export default function LoginPage() {
               />
             </div>
           </div>
-
-          {/* Right side - Login Form */}
           <div className="p-6 md:p-8">
-            {/* Close button */}
             <div className="text-right">
               <Button
                 variant="ghost"

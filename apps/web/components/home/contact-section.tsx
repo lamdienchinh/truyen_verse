@@ -14,8 +14,9 @@ import { useState } from "react";
 
 const ContactSection = () => {
   const [isSubmitting] = useState(false);
-
-  const handleSubmit = async () => {};
+  const handleSubmit = async () => {
+    console.log('RUN')
+  };
 
   return (
     <div id="contact" className="w-full max-w-6xl mx-auto px-4 py-12">

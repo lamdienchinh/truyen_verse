@@ -1,11 +1,14 @@
 "use client";
 
+import { AuthenApi } from "@/api/auth-api";
+import { showToast } from "@/app/providers";
 import { useAuth } from "@/contexts/auth-context";
 import { Button } from "@workspace/ui/components/button";
 import { Input } from "@workspace/ui/components/input";
 import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 
 interface LoginFormValues {
   email: string;
@@ -13,7 +16,7 @@ interface LoginFormValues {
 }
 
 export function LoginForm() {
-  const { openModal } = useAuth();
+  const { openModal, closeModal } = useAuth();
   const [showPassword, setShowPassword] = useState(false);
   const {
     register,
@@ -22,7 +25,21 @@ export function LoginForm() {
   } = useForm<LoginFormValues>();
 
   const onSubmit = async (data: LoginFormValues) => {
-    console.log("login: ", data);
+    try {
+      const body = {
+        email: data.email,
+        password: data.password,
+      };
+      const result = await AuthenApi.login(body);
+      const { accessToken } = result?.data;
+      if (typeof window !== "undefined" && accessToken) {
+        localStorage.setItem("token", accessToken);
+      }
+      showToast("success", "Đăng nhập thành công");
+      closeModal();
+    } catch (e) {
+      showToast("error", "Sai tài khoản hoặc mật khẩu");
+    }
   };
 
   return (
@@ -75,10 +92,7 @@ export function LoginForm() {
         </div>
       </div>
 
-      <Button
-        type="submit"
-        className="w-full"
-      >
+      <Button type="submit" className="w-full">
         Đăng nhập
       </Button>
     </form>

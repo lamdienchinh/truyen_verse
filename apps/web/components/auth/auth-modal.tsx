@@ -20,7 +20,12 @@ export default function AuthModal() {
   const { activeModal, openModal, closeModal } = useAuth();
 
   const handleSocialLogin = (provider: "google" | "facebook") => {
-    console.log(`${provider} login`);
+    const baseUrl = process.env.NEXT_PUBLIC_API;
+    if (baseUrl) {
+      window.location.href = `${baseUrl}/auth/${provider}`;
+    } else {
+      console.error("API base URL is not defined");
+    }
   };
 
   return (
@@ -58,7 +63,6 @@ export default function AuthModal() {
                 {activeModal === "login" && <LoginForm />}
                 {activeModal === "signup" && <SignupForm />}
                 {activeModal === "forgotPassword" && <ForgotPasswordForm />}
-
                 {activeModal !== "forgotPassword" && (
                   <>
                     <div className="relative">
