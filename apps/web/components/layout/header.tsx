@@ -67,7 +67,7 @@ function HeaderContent() {
                   </Avatar>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
-                  <DropdownMenuItem>
+                  <DropdownMenuItem asChild>
                     <Link href="/profile">Hồ sơ</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={handleLogout}>
