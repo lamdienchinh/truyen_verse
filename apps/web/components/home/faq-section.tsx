@@ -50,13 +50,13 @@ const FAQ = ({
 }: FAQProps) => {
   return (
     <section id="faq" className="container py-8">
-      <Card className="w-full max-w-3xl mx-auto">
+      <Card className="w-full">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">
             {title}
           </CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className=''>
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>

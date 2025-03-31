@@ -10,7 +10,7 @@ import RecentReviewsMarquee from "@/components/home/recent-reviews";
 
 export default function Page() {
   return (
-    <div>
+    <>
       <HeroSection />
       <FeaturedNovels />
       <BlogSection />
@@ -20,6 +20,6 @@ export default function Page() {
       <ContactSection />
       <QuoteMarquee />
       <FAQ />
-    </div>
+    </>
   );
 }

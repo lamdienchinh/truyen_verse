@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-muted py-6">
+    <footer className="bg-muted py-6 w-full">
       <div className="container">
-        <div className="grid gap-8 md:grid-cols-4">
-          <div>
+        <div className="grid gap-8 grid-cols-2 sm:grid-cols-2 md:grid-cols-4">
+          <div className="col-span-2 sm:col-span-1">
             <h3 className="font-semibold mb-2">Truyện Verse</h3>
             <p className="text-sm text-muted-foreground">
               Đọc truyện online, chia sẻ niềm đam mê
@@ -31,7 +31,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="col-span-2 sm:col-span-1 md:col-span-1">
             <h3 className="font-semibold mb-2">Hỗ trợ</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -48,7 +48,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="col-span-2 sm:col-span-1 md:col-span-1">
             <h3 className="font-semibold mb-2">Liên hệ</h3>
             <p className="text-sm text-muted-foreground">
               Email: truyenverse.support@gmail.com

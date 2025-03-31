@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${fontSans.variable} font-sans antialiased scrollbar-custom`}
+        className={`${fontSans.variable} font-sans antialiased scrollbar-custom mx-auto items-center flex flex-col`}
       >
         <Providers>{children}</Providers>
       </body>

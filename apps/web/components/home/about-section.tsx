@@ -7,8 +7,8 @@ import {
 
 export default function AboutSection() {
   return (
-    <section className="pb-12">
-      <div className="container">
+    <section className="flex justify-center pb-12 w-full">
+      <div className="container w-full">
         <h2 className="text-2xl font-bold mb-6 text-start">
           Tại sao chọn Truyện Verse?
         </h2>

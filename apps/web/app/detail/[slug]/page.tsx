@@ -6,7 +6,7 @@ import ReviewTabs from "@/components/detail/review-tabs";
 
 export default function Detail() {
   return (
-    <div className="py-8">
+    <div className="py-4 sm:py-6 md:py-8">
       <IntroductionSection />
       <ChaptersList />
       <DescriptionSection />

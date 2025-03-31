@@ -31,7 +31,7 @@ const novels = [
 
 Kiểm tra đo lường linh căn ngày rơi xuống ngũ đẳng, kiếp này khó có thể đột phá Luyện Khí trung kỳ, tiên môn không thu, trường sinh khó cầu.
 
-Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì “Linh nô”, lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
+Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì "Linh nô", lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
 
 Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi địa, lấy linh nô chi thân nhập ma đạo đại môn, may mắn có 【 Cất đặt cột 】 bàng thân, có thể giải quyết rất nhiều vấn đề!
 
@@ -39,7 +39,7 @@ Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi �
 
 【 Cất đặt cột 1: Nhiên Huyết công 】
 
-“Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành.”
+"Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành."
 
 Ps: (tóm tắt vô lực, dời bước chính văn)`,
     cover: sample_img,
@@ -53,7 +53,7 @@ Ps: (tóm tắt vô lực, dời bước chính văn)`,
 
 Kiểm tra đo lường linh căn ngày rơi xuống ngũ đẳng, kiếp này khó có thể đột phá Luyện Khí trung kỳ, tiên môn không thu, trường sinh khó cầu.
 
-Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì “Linh nô”, lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
+Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì "Linh nô", lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
 
 Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi địa, lấy linh nô chi thân nhập ma đạo đại môn, may mắn có 【 Cất đặt cột 】 bàng thân, có thể giải quyết rất nhiều vấn đề!
 
@@ -61,7 +61,7 @@ Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi �
 
 【 Cất đặt cột 1: Nhiên Huyết công 】
 
-“Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành.”
+"Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành."
 
 Ps: (tóm tắt vô lực, dời bước chính văn)`,
     cover: sample_img,
@@ -75,7 +75,7 @@ Ps: (tóm tắt vô lực, dời bước chính văn)`,
 
 Kiểm tra đo lường linh căn ngày rơi xuống ngũ đẳng, kiếp này khó có thể đột phá Luyện Khí trung kỳ, tiên môn không thu, trường sinh khó cầu.
 
-Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì “Linh nô”, lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
+Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì "Linh nô", lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
 
 Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi địa, lấy linh nô chi thân nhập ma đạo đại môn, may mắn có 【 Cất đặt cột 】 bàng thân, có thể giải quyết rất nhiều vấn đề!
 
@@ -83,7 +83,7 @@ Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi �
 
 【 Cất đặt cột 1: Nhiên Huyết công 】
 
-“Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành.”
+"Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành."
 
 Ps: (tóm tắt vô lực, dời bước chính văn)`,
     cover: sample_img,
@@ -97,7 +97,7 @@ Ps: (tóm tắt vô lực, dời bước chính văn)`,
 
 Kiểm tra đo lường linh căn ngày rơi xuống ngũ đẳng, kiếp này khó có thể đột phá Luyện Khí trung kỳ, tiên môn không thu, trường sinh khó cầu.
 
-Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì “Linh nô”, lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
+Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì "Linh nô", lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
 
 Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi địa, lấy linh nô chi thân nhập ma đạo đại môn, may mắn có 【 Cất đặt cột 】 bàng thân, có thể giải quyết rất nhiều vấn đề!
 
@@ -105,7 +105,7 @@ Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi �
 
 【 Cất đặt cột 1: Nhiên Huyết công 】
 
-“Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành.”
+"Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành."
 
 Ps: (tóm tắt vô lực, dời bước chính văn)`,
     cover: sample_img,
@@ -119,7 +119,7 @@ Ps: (tóm tắt vô lực, dời bước chính văn)`,
 
 Kiểm tra đo lường linh căn ngày rơi xuống ngũ đẳng, kiếp này khó có thể đột phá Luyện Khí trung kỳ, tiên môn không thu, trường sinh khó cầu.
 
-Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì “Linh nô”, lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
+Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì "Linh nô", lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
 
 Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi địa, lấy linh nô chi thân nhập ma đạo đại môn, may mắn có 【 Cất đặt cột 】 bàng thân, có thể giải quyết rất nhiều vấn đề!
 
@@ -127,7 +127,7 @@ Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi �
 
 【 Cất đặt cột 1: Nhiên Huyết công 】
 
-“Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành.”
+"Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành."
 
 Ps: (tóm tắt vô lực, dời bước chính văn)`,
     cover: sample_img,
@@ -141,7 +141,7 @@ Ps: (tóm tắt vô lực, dời bước chính văn)`,
 
 Kiểm tra đo lường linh căn ngày rơi xuống ngũ đẳng, kiếp này khó có thể đột phá Luyện Khí trung kỳ, tiên môn không thu, trường sinh khó cầu.
 
-Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì “Linh nô”, lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
+Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì "Linh nô", lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
 
 Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi địa, lấy linh nô chi thân nhập ma đạo đại môn, may mắn có 【 Cất đặt cột 】 bàng thân, có thể giải quyết rất nhiều vấn đề!
 
@@ -149,7 +149,7 @@ Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi �
 
 【 Cất đặt cột 1: Nhiên Huyết công 】
 
-“Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành.”
+"Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành."
 
 Ps: (tóm tắt vô lực, dời bước chính văn)`,
     cover: sample_img,
@@ -163,7 +163,7 @@ Ps: (tóm tắt vô lực, dời bước chính văn)`,
 
 Kiểm tra đo lường linh căn ngày rơi xuống ngũ đẳng, kiếp này khó có thể đột phá Luyện Khí trung kỳ, tiên môn không thu, trường sinh khó cầu.
 
-Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì “Linh nô”, lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
+Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì "Linh nô", lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
 
 Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi địa, lấy linh nô chi thân nhập ma đạo đại môn, may mắn có 【 Cất đặt cột 】 bàng thân, có thể giải quyết rất nhiều vấn đề!
 
@@ -171,7 +171,7 @@ Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi �
 
 【 Cất đặt cột 1: Nhiên Huyết công 】
 
-“Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành.”
+"Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành."
 
 Ps: (tóm tắt vô lực, dời bước chính văn)`,
     cover: sample_img,
@@ -212,18 +212,20 @@ const NovelCarousel = () => {
         ]}
         suppressHydrationWarning
       >
-        <CarouselContent>
+        <CarouselContent className="-ml-2 md:-ml-4">
           {novels.map((novel, index) => (
             <CarouselItem
               key={index}
-              className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5"
+              className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 2xl:basis-1/5"
             >
-              <NovelCard {...novel} />
+              <div className="h-full">
+                <NovelCard {...novel} />
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="hidden sm:flex left-1" />
+        <CarouselNext className="hidden sm:flex right-1" />
       </Carousel>
     </div>
   );
@@ -231,21 +233,21 @@ const NovelCarousel = () => {
 
 export default function FeaturedNovels() {
   return (
-    <section className="pt-12" suppressHydrationWarning>
-      <div className="container">
-        <Tabs defaultValue="recommended" className="w-full">
-          <TabsList>
-            <TabsTrigger value="recommended">Đề xuất</TabsTrigger>
-            <TabsTrigger value="updated">Mới cập nhật</TabsTrigger>
-            <TabsTrigger value="top">Top truyện</TabsTrigger>
+    <section className="pt-8 container sm:pt-12" suppressHydrationWarning>
+      <div className="">
+        <Tabs defaultValue="recommended" className="">
+          <TabsList className="w-fit grid grid-cols-3 sm:flex gap-1 sm:gap-0">
+            <TabsTrigger value="recommended" className="text-xs sm:text-sm">Đề xuất</TabsTrigger>
+            <TabsTrigger value="updated" className="text-xs sm:text-sm">Mới cập nhật</TabsTrigger>
+            <TabsTrigger value="top" className="text-xs sm:text-sm">Top truyện</TabsTrigger>
           </TabsList>
-          <TabsContent value="recommended" className="mt-6">
+          <TabsContent value="recommended" className="mt-4 sm:mt-6">
             <NovelCarousel />
           </TabsContent>
-          <TabsContent value="updated" className="mt-6">
+          <TabsContent value="updated" className="mt-4 sm:mt-6">
             <NovelCarousel />
           </TabsContent>
-          <TabsContent value="top" className="mt-6">
+          <TabsContent value="top" className="mt-4 sm:mt-6">
             <NovelCarousel />
           </TabsContent>
         </Tabs>

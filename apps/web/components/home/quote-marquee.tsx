@@ -25,10 +25,10 @@ const QuoteMarquee = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden bg-primary text-primary-foreground p-4">
-      <Marquee pauseOnHover className="[--duration:80s]">
+    <div className="w-full overflow-hidden bg-primary text-primary-foreground p-2 sm:p-4">
+      <Marquee pauseOnHover className="[--duration:60s] sm:[--duration:80s]">
         {quotes.map((quote, index) => (
-          <span key={index} className="inline-block mx-8 text-lg">
+          <span key={index} className="inline-block mx-4 sm:mx-8 text-sm sm:text-lg">
             <span>&ldquo;{quote.text}&rdquo;</span>
             <span className="ml-2">-&nbsp; {quote.author}</span>
           </span>
