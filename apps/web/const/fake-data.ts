@@ -1,10 +1,10 @@
 import { IArticle } from "@/type/article";
-import { IDiscussion } from "@/type/forum";
+import { INovel } from "@/type/novel";
 import { getRandomImage } from "@/utils/common";
 
 const sample_img = getRandomImage(1);
 
-export const novels = [
+export const novels: INovel[] = [
   {
     title: "Đấu La Đại Lục",
     author: "Đường Gia Tam Thiếu",
@@ -93,72 +93,6 @@ Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi �
 Ps: (tóm tắt vô lực, dời bước chính văn)`,
     cover: sample_img,
   },
-  {
-    title: "Trùng Kiến Tu Tiên Gia Tộc",
-    author: "Cửu Huyền Sơn Chủ",
-    desc: `Chuyển sinh tu hành thế giới mười sáu năm, từ phế linh căn bắt đầu vấn ma tu hành.
-
-....
-
-Kiểm tra đo lường linh căn ngày rơi xuống ngũ đẳng, kiếp này khó có thể đột phá Luyện Khí trung kỳ, tiên môn không thu, trường sinh khó cầu.
-
-Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì “Linh nô”, lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
-
-Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi địa, lấy linh nô chi thân nhập ma đạo đại môn, may mắn có 【 Cất đặt cột 】 bàng thân, có thể giải quyết rất nhiều vấn đề!
-
-....
-
-【 Cất đặt cột 1: Nhiên Huyết công 】
-
-“Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành.”
-
-Ps: (tóm tắt vô lực, dời bước chính văn)`,
-    cover: sample_img,
-  },
-  {
-    title: "Từ Phế Linh Căn Bắt Đầu Vấn Ma Tu Hành",
-    author: "Thủ Tàn Miêu Miêu Tương",
-    desc: `Chuyển sinh tu hành thế giới mười sáu năm, từ phế linh căn bắt đầu vấn ma tu hành.
-
-....
-
-Kiểm tra đo lường linh căn ngày rơi xuống ngũ đẳng, kiếp này khó có thể đột phá Luyện Khí trung kỳ, tiên môn không thu, trường sinh khó cầu.
-
-Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì “Linh nô”, lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
-
-Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi địa, lấy linh nô chi thân nhập ma đạo đại môn, may mắn có 【 Cất đặt cột 】 bàng thân, có thể giải quyết rất nhiều vấn đề!
-
-....
-
-【 Cất đặt cột 1: Nhiên Huyết công 】
-
-“Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành.”
-
-Ps: (tóm tắt vô lực, dời bước chính văn)`,
-    cover: sample_img,
-  },
-  {
-    title: "Vị Đạo Trưởng Này Quá Cục Súc",
-    author: "Ép Người Quá Đã",
-    desc: `Chuyển sinh tu hành thế giới mười sáu năm, từ phế linh căn bắt đầu vấn ma tu hành.
-
-....
-
-Kiểm tra đo lường linh căn ngày rơi xuống ngũ đẳng, kiếp này khó có thể đột phá Luyện Khí trung kỳ, tiên môn không thu, trường sinh khó cầu.
-
-Vừa lúc gặp Ma tông dịch nô, từ các nơi c·ướp đoạt tư chất thấp hèn giả vì “Linh nô”, lấy nhiên thọ ma công bồi dưỡng nhiều phê háo tài, lệnh này tự tổn hại tu vi chế tác linh sa, cung cấp Ma tông hưởng dụng.
-
-Vương Dục tại Thạch Hồ thành b·ị c·ướp hướng Ma Vực chi địa, lấy linh nô chi thân nhập ma đạo đại môn, may mắn có 【 Cất đặt cột 】 bàng thân, có thể giải quyết rất nhiều vấn đề!
-
-....
-
-【 Cất đặt cột 1: Nhiên Huyết công 】
-
-“Nhiên Huyết công ( 0/100 ): Một ngày 48 luyện, một năm có thể thành.”
-
-Ps: (tóm tắt vô lực, dời bước chính văn)`,
-    cover: sample_img,
-  },
 ];
 
 export const chapter_detail = {
@@ -226,54 +160,92 @@ export const mockArticles: IArticle[] = [
   },
 ];
 
-
 export const threads = [
-    {
-      id: '1',
-      title: "[Tiên Hiệp] Thương Thiên Chí Tôn - Chapter 1: Khởi đầu",
-      author: "TruyenHayVN",
-      avatar: "/api/placeholder/32/32",
-      postDate: "2024-01-14 10:30",
-      lastReply: {
-        author: "DocGiaKiet",
-        date: "2024-01-14 15:45",
-      },
-      views: 1250,
-      replies: 45,
-      likes: 67,
-      isPinned: true,
-      isHot: true,
+  {
+    id: "1",
+    title: "[Tiên Hiệp] Thương Thiên Chí Tôn - Chapter 1: Khởi đầu",
+    author: "TruyenHayVN",
+    avatar: "/api/placeholder/32/32",
+    postDate: "2024-01-14 10:30",
+    lastReply: {
+      author: "DocGiaKiet",
+      date: "2024-01-14 15:45",
     },
-    {
-      id: '2',
-      title: "[Đô Thị] Tối Cường Phản Chi Ký - Chapter 15: Gặp gỡ",
-      author: "TruyenCuVN",
-      avatar: "/api/placeholder/32/32",
-      postDate: "2024-01-14 09:15",
-      lastReply: {
-        author: "HoangTuBeDe",
-        date: "2024-01-14 14:30",
-      },
-      views: 890,
-      replies: 32,
-      likes: 41,
-      isPinned: false,
-      isHot: true,
+    views: 1250,
+    replies: 45,
+    likes: 67,
+    isPinned: true,
+    isHot: true,
+  },
+  {
+    id: "2",
+    title: "[Đô Thị] Tối Cường Phản Chi Ký - Chapter 15: Gặp gỡ",
+    author: "TruyenCuVN",
+    avatar: "/api/placeholder/32/32",
+    postDate: "2024-01-14 09:15",
+    lastReply: {
+      author: "HoangTuBeDe",
+      date: "2024-01-14 14:30",
     },
-    {
-      id: '3',
-      title: "[Huyền Huyễn] Vô Thượng Thần Đế - Chapter 8: Tu luyện",
-      author: "TruyenHot24h",
-      avatar: "/api/placeholder/32/32",
-      postDate: "2024-01-14 08:00",
-      lastReply: {
-        author: "NguyetHoa",
-        date: "2024-01-14 13:20",
-      },
-      views: 756,
-      replies: 28,
-      likes: 35,
-      isPinned: false,
-      isHot: false,
+    views: 890,
+    replies: 32,
+    likes: 41,
+    isPinned: false,
+    isHot: true,
+  },
+  {
+    id: "3",
+    title: "[Huyền Huyễn] Vô Thượng Thần Đế - Chapter 8: Tu luyện",
+    author: "TruyenHot24h",
+    avatar: "/api/placeholder/32/32",
+    postDate: "2024-01-14 08:00",
+    lastReply: {
+      author: "NguyetHoa",
+      date: "2024-01-14 13:20",
     },
-  ];
+    views: 756,
+    replies: 28,
+    likes: 35,
+    isPinned: false,
+    isHot: false,
+  },
+];
+
+export const blog_posts = [
+  {
+    id: "1",
+    title: "Top 10 truyện tiên hiệp hay nhất 2023",
+    excerpt: "Khám phá những tác phẩm tiên hiệp đỉnh cao trong năm qua...",
+    image: sample_img,
+  },
+  {
+    id: "2",
+    title: "Phỏng vấn độc quyền tác giả Đường Gia Tam Thiếu",
+    excerpt: "Tìm hiểu về quá trình sáng tác của tác giả Đấu La Đại Lục...",
+    image: sample_img,
+  },
+  {
+    id: "3",
+    title: "Hướng dẫn: Cách đọc truyện hiệu quả",
+    excerpt: "Những mẹo hay giúp bạn tận hưởng truyện chữ tốt hơn...",
+    image: sample_img,
+  },
+  {
+    id: "4",
+    title: "Top 20 truyện tiên hiệp hay nhất 2024",
+    excerpt: "Khám phá những tác phẩm tiên hiệp đỉnh cao trong năm qua...",
+    image: sample_img,
+  },
+  {
+    id: "5",
+    title: "Top 5 truyện tiên hiệp hay nhất 2024",
+    excerpt: "Khám phá những tác phẩm tiên hiệp đỉnh cao trong năm qua...",
+    image: sample_img,
+  },
+  {
+    id: "5",
+    title: "Top 10 truyện tiên hiệp hay nhất 2025",
+    excerpt: "Khám phá những tác phẩm tiên hiệp đỉnh cao trong năm qua...",
+    image: sample_img,
+  },
+];

@@ -10,6 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@workspace/ui/components/card";
+import { cn } from "@workspace/ui/lib/utils";
 
 type FAQItem = {
   question: string;
@@ -56,10 +57,14 @@ const FAQ = ({
             {title}
           </CardTitle>
         </CardHeader>
-        <CardContent className=''>
+        <CardContent className="">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
+              <AccordionItem
+                key={index}
+                className={cn(index === faqs.length - 1 && "!border-b-0")}
+                value={`item-${index}`}
+              >
                 <AccordionTrigger className="text-lg font-medium hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>

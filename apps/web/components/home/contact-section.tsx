@@ -2,142 +2,203 @@
 
 import { Button } from "@workspace/ui/components/button";
 import {
-    Card,
-    CardContent,
-    CardHeader,
-    CardTitle,
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
 } from "@workspace/ui/components/card";
 import { Input } from "@workspace/ui/components/input";
 import { Textarea } from "@workspace/ui/components/textarea";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MessageCircle, Send, User } from "lucide-react";
 import { useState } from "react";
 
 const ContactSection = () => {
-  const [isSubmitting] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setTimeout(() => {
+      setIsSubmitting(false);
+    }, 2000);
   };
 
   return (
-    <div id="contact" className="w-full container mx-auto py-8 sm:py-10 md:py-12">
-      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8">
-        Liên Hệ Với Chúng Tôi
-      </h2>
+    <section className="py-16 container">
+      <div>
+        <div className="text-center mb-12 lg:mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+            <MessageCircle size={16} />
+            Liên hệ với chúng tôi
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+            Gửi tin nhắn cho chúng tôi
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Có câu hỏi hoặc góp ý? Chúng tôi luôn sẵn sàng hỗ trợ bạn. Hãy gửi
+            thông tin và chúng tôi sẽ phản hồi sớm nhất.
+          </p>
+        </div>
 
-      <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
-        <Card>
-          <CardHeader className="pb-2 sm:pb-4">
-            <CardTitle className="text-lg sm:text-xl">Thông Tin Liên Hệ</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4 sm:space-y-6">
-            <div className="flex items-center space-x-3">
-              <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
-              <div>
-                <h3 className="font-medium text-sm sm:text-base">Điện thoại</h3>
-                <p className="text-gray-600 text-xs sm:text-sm">0123.456.789</p>
+        <div className="max-w-2xl mx-auto">
+          <Card className="bg-white/80 dark:bg-card/80 backdrop-blur-sm">
+            <CardHeader className="text-center pb-6">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Mail className="w-8 h-8 text-primary" />
               </div>
-            </div>
+              <CardTitle className="text-2xl">Gửi tin nhắn</CardTitle>
+              <CardDescription className="text-base">
+                Điền thông tin bên dưới và chúng tôi sẽ liên hệ lại với bạn
+              </CardDescription>
+            </CardHeader>
 
-            <div className="flex items-center space-x-3">
-              <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
-              <div>
-                <h3 className="font-medium text-sm sm:text-base">Email</h3>
-                <p className="text-gray-600 text-xs sm:text-sm">truyenverse.support@gmail.com</p>
-              </div>
-            </div>
+            <CardContent className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 items-start gap-4">
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="firstName"
+                      className="text-sm font-semibold flex items-center gap-2"
+                    >
+                      <User size={16} className="text-primary" />
+                      Họ và tên đệm
+                    </label>
+                    <Input
+                      id="firstName"
+                      placeholder="Nguyễn Văn"
+                      required
+                      className="h-12 text-base transition-all duration-200 focus:border-primary"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="lastName"
+                      className="text-sm font-semibold flex items-center gap-2"
+                    >
+                      Tên
+                    </label>
+                    <Input
+                      id="lastName"
+                      placeholder="An"
+                      required
+                      className="h-12 text-base transition-all duration-200 focus:border-primary"
+                    />
+                  </div>
+                </div>
 
-            <div className="flex items-center space-x-3">
-              <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
-              <div>
-                <h3 className="font-medium text-sm sm:text-base">Địa chỉ</h3>
-                <p className="text-gray-600 text-xs sm:text-sm">123 Đường ABC, Quận XYZ, TP.HCM</p>
-              </div>
-            </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="email"
+                      className="text-sm font-semibold flex items-center gap-2"
+                    >
+                      <Mail size={16} className="text-primary" />
+                      Email
+                    </label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="your.email@example.com"
+                      required
+                      className="h-12 text-base transition-all duration-200 focus:border-primary"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="phone"
+                      className="text-sm font-semibold flex items-center gap-2"
+                    >
+                      Số điện thoại (tùy chọn)
+                    </label>
+                    <Input
+                      id="phone"
+                      type="tel"
+                      placeholder="0987 654 321"
+                      className="h-12 text-base transition-all duration-200 focus:border-primary"
+                    />
+                  </div>
+                </div>
 
-            <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-primary/10 rounded-lg">
-              <p className="text-xs sm:text-sm text-primary">
-                Giờ làm việc: Thứ 2 - Thứ 6 (8:00 - 17:00)
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader className="pb-2 sm:pb-4">
-            <CardTitle className="text-lg sm:text-xl">Gửi Tin Nhắn</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <div className="space-y-1 sm:space-y-2">
-                  <label htmlFor="firstName" className="text-xs sm:text-sm font-medium">
-                    Họ
+                <div className="space-y-2">
+                  <label htmlFor="subject" className="text-sm font-semibold">
+                    Chủ đề
                   </label>
                   <Input
-                    id="firstName"
-                    placeholder="Nhập họ của bạn"
+                    id="subject"
+                    placeholder="Vấn đề bạn muốn trao đổi..."
                     required
-                    className="h-8 sm:h-10 text-xs sm:text-sm"
+                    className="h-12 text-base transition-all duration-200 focus:border-primary"
                   />
                 </div>
-                <div className="space-y-1 sm:space-y-2">
-                  <label htmlFor="lastName" className="text-xs sm:text-sm font-medium">
-                    Tên
+
+                <div className="space-y-2">
+                  <label
+                    htmlFor="message"
+                    className="text-sm font-semibold flex items-center gap-2"
+                  >
+                    <MessageCircle size={16} className="text-primary" />
+                    Nội dung tin nhắn
                   </label>
-                  <Input
-                    id="lastName"
-                    placeholder="Nhập tên của bạn"
+                  <Textarea
+                    id="message"
+                    placeholder="Hãy chia sẻ chi tiết về vấn đề bạn gặp phải hoặc câu hỏi bạn muốn trao đổi..."
+                    className="min-h-[120px] text-base resize-none transition-all duration-200"
                     required
-                    className="h-8 sm:h-10 text-xs sm:text-sm"
                   />
                 </div>
-              </div>
 
-              <div className="space-y-1 sm:space-y-2">
-                <label htmlFor="email" className="text-xs sm:text-sm font-medium">
-                  Email
-                </label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="email@example.com"
-                  required
-                  className="h-8 sm:h-10 text-xs sm:text-sm"
-                />
-              </div>
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full h-12 text-base font-semibold"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <div className="w-4 h-4 border-white/30 border-t-white rounded-full animate-spin mr-2" />
+                      Đang gửi...
+                    </>
+                  ) : (
+                    <>
+                      Gửi tin nhắn
+                      <Send
+                        size={16}
+                        className="ml-2 duration-200"
+                      />
+                    </>
+                  )}
+                </Button>
+              </form>
 
-              <div className="space-y-1 sm:space-y-2">
-                <label htmlFor="phone" className="text-xs sm:text-sm font-medium">
-                  Số điện thoại
-                </label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  placeholder="0123 456 789"
-                  required
-                  className="h-8 sm:h-10 text-xs sm:text-sm"
-                />
+              {/* Bottom Note */}
+              <div className="text-center pt-4 border-t">
+                <p className="text-sm text-muted-foreground">
+                  Chúng tôi sẽ phản hồi trong vòng{" "}
+                  <span className="font-semibold text-primary">24 giờ</span>
+                </p>
               </div>
+            </CardContent>
+          </Card>
+        </div>
 
-              <div className="space-y-1 sm:space-y-2">
-                <label htmlFor="message" className="text-xs sm:text-sm font-medium">
-                  Nội dung
-                </label>
-                <Textarea
-                  id="message"
-                  placeholder="Nhập nội dung tin nhắn của bạn"
-                  className="min-h-[100px] sm:min-h-[120px] text-xs sm:text-sm"
-                  required
-                />
-              </div>
-
-              <Button type="submit" className="w-full h-8 sm:h-10 text-xs sm:text-sm" disabled={isSubmitting}>
-                {isSubmitting ? "Đang gửi..." : "Gửi tin nhắn"}
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
+        {/* Quick Contact Options */}
+        <div className="mt-12 text-center">
+          <p className="text-muted-foreground mb-4">
+            Hoặc liên hệ trực tiếp qua:
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="mailto:support@truyenverse.com"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 hover:bg-primary/20 text-primary font-medium transition-colors duration-200"
+            >
+              <Mail size={16} />
+              Email hỗ trợ
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
