@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 38% 97%;
+    --foreground: 20 6% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 6% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 6% 10%;
+
+    /* Màu chủ đạo - xanh lá cây đậm */
+    --primary: 150 30% 40%;
+    --primary-foreground: 355 100% 97%;
+
+    /* Màu phụ - be nhạt */
+    --secondary: 30 20% 90%;
+    --secondary-foreground: 20 6% 10%;
+
+    --muted: 30 20% 90%;
+    --muted-foreground: 20 6% 46%;
+
+    --accent: 150 30% 92%;
+    --accent-foreground: 20 6% 10%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 355 100% 97%;
+
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 150 30% 40%;
+
+    /* Màu cho biểu đồ */
+    --chart-1: 150 30% 40%;
+    --chart-2: 30 40% 60%;
+    --chart-3: 200 30% 45%;
+    --chart-4: 20 40% 55%;
+    --chart-5: 280 30% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 20 14% 4%;
+    --foreground: 60 9% 98%;
+
+    --card: 20 14% 4%;
+    --card-foreground: 60 9% 98%;
+
+    --popover: 20 14% 4%;
+    --popover-foreground: 60 9% 98%;
+
+    /* Màu chủ đạo dark mode - xanh lá cây sáng hơn */
+    --primary: 150 40% 50%;
+    --primary-foreground: 355 100% 97%;
+
+    --secondary: 30 12% 22%;
+    --secondary-foreground: 60 9% 98%;
+
+    --muted: 30 12% 22%;
+    --muted-foreground: 60 9% 70%;
+
+    --accent: 150 40% 20%;
+    --accent-foreground: 60 9% 98%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 30 12% 25%;
+    --input: 30 12% 25%;
+    --ring: 150 40% 50%;
+
+    /* Màu biểu đồ dark mode */
+    --chart-1: 150 40% 50%;
+    --chart-2: 30 50% 70%;
+    --chart-3: 200 40% 55%;
+    --chart-4: 20 50% 65%;
+    --chart-5: 280 40% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+@layer utilities {
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 10px;
+  }
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #e8f1ec;
+    border-radius: 10px;
+  }
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #478566;
+    border-radius: 10px;
+    border: 2px solid #e8f1ec;
+    transition:
+      background-color 0.3s,
+      transform 0.2s;
+  }
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #356a4d;
+    transform: scale(1.1);
+  }
+}
