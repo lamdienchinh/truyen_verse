@@ -10,7 +10,7 @@ export default function ArticleList() {
   const [totalPages] = useState<number>(2);
   const [pageIndex, setPageIndex] = useState<number>(1);
   return (
-    <div className="container min-h-screen py-8">
+    <div className="min-h-screen py-8">
       <ArticleBanner />
       <div className="flex gap-8 mt-8">
         <div className="basis-3/4 space-y-4">

@@ -10,7 +10,7 @@ export default function ArticlePage() {
     .slice(0, 3);
 
   return (
-    <div className="min-h-screen container">
+    <div className="min-h-screen">
       <div className="flex gap-8 py-8">
         {article && (
           <div className="flex-1 basis-3/4">

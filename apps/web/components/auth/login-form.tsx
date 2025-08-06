@@ -1,7 +1,7 @@
 "use client";
 
 import { AuthenApi } from "@/api/auth-api";
-import { showToast } from "@/app/providers";
+import { showToast } from "@/components/providers";
 import { useAuth } from "@/contexts/auth-context";
 import { Button } from "@workspace/ui/components/button";
 import { Input } from "@workspace/ui/components/input";

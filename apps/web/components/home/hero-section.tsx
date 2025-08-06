@@ -18,7 +18,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/20 to-black/10" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
 
-      <div className="relative z-10 h-full">
+      <div className="flex w-full justify-center relative z-10 h-full">
         <div className="container h-full flex items-center">
           <div className="max-w-2xl space-y-4 sm:space-y-6">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/20 border border-primary/30 backdrop-blur-sm">

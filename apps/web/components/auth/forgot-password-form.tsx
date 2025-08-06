@@ -9,8 +9,8 @@ import { Label } from "@workspace/ui/components/label";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
+import { showToast } from "../providers";
 import { CountdownTimer } from "../ui/countdown";
-import { showToast } from "@/app/providers";
 
 interface ForgotPasswordFormValues {
   email: string;

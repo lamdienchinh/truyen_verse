@@ -10,7 +10,7 @@ export default function GeneralLayout({
   return (
     <>
       <Header />
-      {children}
+      <div className='w-full flex flex-col items-center'>{children}</div>
       <Footer />
       <ScrollToTopButton />
     </>
